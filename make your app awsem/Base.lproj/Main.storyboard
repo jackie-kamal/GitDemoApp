@@ -1,24 +1,305 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pn-GE-CGb">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="LobsterTwo-BoldItalic.ttf">
+            <string>LobsterTwo-BoldItalic</string>
+        </array>
+        <array key="Roboto-MediumItalic.ttf">
+            <string>Roboto-MediumItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="make_your_app_awsem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cinema_4" translatesAutoresizingMaskIntoConstraints="NO" id="JdL-mf-pV7">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" movie time " textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="8R5-Q3-WZM">
+                                <rect key="frame" x="102.5" y="75" width="819" height="136.5"/>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="132"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="watch it" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="NWu-WG-F3b">
+                                <rect key="frame" x="307" y="231.5" width="410" height="96"/>
+                                <fontDescription key="fontDescription" name="Roboto-MediumItalic" family="Roboto" pointSize="77"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tz3-Ut-CAx">
+                                <rect key="frame" x="51" y="827" width="922" height="205"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DYZ-w2-h14">
+                                    <rect key="frame" x="0.0" y="0.0" width="922" height="205"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KGD-X8-LYv">
+                                            <rect key="frame" x="0.0" y="0.5" width="922" height="205.5"/>
+                                            <string key="text">hope you engoy your movie time.if you face any proplem with the application or you have any sugession do not hesitate to contact us.</string>
+                                            <color key="textColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="LucidaGrande" family="Lucida Grande" pointSize="41"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="KGD-X8-LYv" firstAttribute="top" secondItem="tz3-Ut-CAx" secondAttribute="top" id="9RT-c1-iT3"/>
+                                    <constraint firstItem="KGD-X8-LYv" firstAttribute="leading" secondItem="tz3-Ut-CAx" secondAttribute="leading" id="VMD-Kg-zKj"/>
+                                    <constraint firstItem="KGD-X8-LYv" firstAttribute="width" secondItem="tz3-Ut-CAx" secondAttribute="width" id="ZH7-Kb-BcU"/>
+                                    <constraint firstItem="KGD-X8-LYv" firstAttribute="height" secondItem="tz3-Ut-CAx" secondAttribute="height" id="iwq-E6-pSV"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNq-tc-cbS" customClass="DisighnableButton" customModule="make_your_app_awsem" customModuleProvider="target">
+                                <rect key="frame" x="522" y="1053" width="451" height="91.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="60"/>
+                                <state key="normal" title="log in">
+                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.95344358679999996" green="0.6985741258" blue="0.8850685358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="Q66-0v-G7H" kind="presentation" modalPresentationStyle="overCurrentContext" id="IbT-dS-Man"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.59999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RmI-rj-wAy" customClass="DisighnableButton" customModule="make_your_app_awsem" customModuleProvider="target">
+                                <rect key="frame" x="51" y="1053" width="451" height="92"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="60"/>
+                                <state key="normal" title="sighn up">
+                                    <color key="titleColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.95344358682632446" green="0.69857412576675415" blue="0.88506853580474854" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="23"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NWu-WG-F3b" firstAttribute="centerX" secondItem="8R5-Q3-WZM" secondAttribute="centerX" id="14y-Rb-zAL"/>
+                            <constraint firstItem="RmI-rj-wAy" firstAttribute="width" secondItem="KGD-X8-LYv" secondAttribute="width" multiplier="0.489" id="2Pf-47-Fko"/>
+                            <constraint firstItem="JdL-mf-pV7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="5Tp-hY-gCe"/>
+                            <constraint firstItem="8R5-Q3-WZM" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.1" id="5hW-nB-3Rq"/>
+                            <constraint firstItem="NWu-WG-F3b" firstAttribute="height" secondItem="8R5-Q3-WZM" secondAttribute="height" multiplier="0.7" id="9cw-zc-wQA"/>
+                            <constraint firstItem="NWu-WG-F3b" firstAttribute="width" secondItem="8R5-Q3-WZM" secondAttribute="width" multiplier="0.5" id="BVw-Zy-yfR"/>
+                            <constraint firstItem="8R5-Q3-WZM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Cmr-Ru-cWF"/>
+                            <constraint firstItem="gNq-tc-cbS" firstAttribute="top" secondItem="KGD-X8-LYv" secondAttribute="bottom" constant="20.5" id="FgI-Ab-LDb"/>
+                            <constraint firstItem="gNq-tc-cbS" firstAttribute="height" secondItem="KGD-X8-LYv" secondAttribute="height" multiplier="0.45" id="L1a-Lr-tb6"/>
+                            <constraint firstItem="RmI-rj-wAy" firstAttribute="leading" secondItem="KGD-X8-LYv" secondAttribute="leading" id="M0D-EK-c1g"/>
+                            <constraint firstItem="tz3-Ut-CAx" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="RZB-k8-qex"/>
+                            <constraint firstItem="gNq-tc-cbS" firstAttribute="width" secondItem="KGD-X8-LYv" secondAttribute="width" multiplier="0.489" id="VWt-Rt-5MD"/>
+                            <constraint firstItem="tz3-Ut-CAx" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.3" id="WDs-P5-a3J"/>
+                            <constraint firstItem="tz3-Ut-CAx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bYg-Sf-Ncx"/>
+                            <constraint firstItem="8R5-Q3-WZM" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="eky-6Y-dc7"/>
+                            <constraint firstItem="JdL-mf-pV7" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fho-Q0-fGr"/>
+                            <constraint firstItem="tz3-Ut-CAx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.9" id="fo6-po-zKZ"/>
+                            <constraint firstItem="NWu-WG-F3b" firstAttribute="top" secondItem="8R5-Q3-WZM" secondAttribute="bottom" constant="20" id="kgV-z3-CyW"/>
+                            <constraint firstItem="RmI-rj-wAy" firstAttribute="height" secondItem="KGD-X8-LYv" secondAttribute="height" multiplier="0.45" id="o7d-2E-N9Q"/>
+                            <constraint firstItem="gNq-tc-cbS" firstAttribute="trailing" secondItem="KGD-X8-LYv" secondAttribute="trailing" id="pzr-O7-e7y"/>
+                            <constraint firstItem="RmI-rj-wAy" firstAttribute="top" secondItem="KGD-X8-LYv" secondAttribute="bottom" constant="20.5" id="tr7-vk-f4J"/>
+                            <constraint firstItem="8R5-Q3-WZM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.2" id="xFe-F6-1X3"/>
+                            <constraint firstItem="JdL-mf-pV7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zhP-Cq-GfW"/>
+                            <constraint firstItem="JdL-mf-pV7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="zoD-vN-Dca"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="N7p-vr-w7n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="547" y="103"/>
+        </scene>
+        <!--Sighn In View Controller-->
+        <scene sceneID="hes-2Y-GVQ">
+            <objects>
+                <viewController storyboardIdentifier="SighnInViewController" id="Q66-0v-G7H" customClass="SighnInViewController" customModule="make_your_app_awsem" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aeE-Bg-al2">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JvH-n8-H0X">
+                                <rect key="frame" x="0.0" y="10" width="1024" height="1366"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="B3T-YS-tsi">
+                                    <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Rm-jk-ro8">
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                                            <state key="normal" title="dismiss"/>
+                                            <connections>
+                                                <action selector="dismiss_Btn_pressed:" destination="Q66-0v-G7H" eventType="touchUpInside" id="8Xn-ay-uEb"/>
+                                            </connections>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Nv-j6-amP" customClass="DisighnableView" customModule="make_your_app_awsem" customModuleProvider="target">
+                                            <rect key="frame" x="358" y="205" width="307" height="273"/>
+                                            <color key="backgroundColor" red="0.95344358679999996" green="0.6985741258" blue="0.8850685358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="150"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZZ-wb-tRd" customClass="DisighnableView" customModule="make_your_app_awsem" customModuleProvider="target">
+                                            <rect key="frame" x="153.5" y="341.5" width="716.5" height="683"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="log in" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="28" translatesAutoresizingMaskIntoConstraints="NO" id="S8D-ZU-7mj">
+                                                    <rect key="frame" x="108" y="103" width="501.5" height="68"/>
+                                                    <fontDescription key="fontDescription" name="LobsterTwo-BoldItalic" family="Lobster Two" pointSize="52"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TgB-QA-BKB" customClass="DisighnableTF" customModule="make_your_app_awsem" customModuleProvider="target">
+                                                    <rect key="frame" x="108" y="238.5" width="502" height="68"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="23"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9HV-nS-dT0" customClass="DisighnableTF" customModule="make_your_app_awsem" customModuleProvider="target">
+                                                    <rect key="frame" x="108" y="362" width="502" height="68"/>
+                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="50"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textField>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VNm-5V-WKo" customClass="DisighnableButton" customModule="make_your_app_awsem" customModuleProvider="target">
+                                                    <rect key="frame" x="108" y="492" width="502" height="102"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="51"/>
+                                                    <state key="normal" title="sighn in">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="6"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="14"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.95344358679999996" green="0.6985741258" blue="0.8850685358" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="S8D-ZU-7mj" firstAttribute="centerY" secondItem="oZZ-wb-tRd" secondAttribute="centerY" multiplier="0.4" id="5pa-7l-x2P"/>
+                                                <constraint firstItem="VNm-5V-WKo" firstAttribute="height" secondItem="9HV-nS-dT0" secondAttribute="height" multiplier="1.5" id="Bkh-R5-Hkf"/>
+                                                <constraint firstItem="9HV-nS-dT0" firstAttribute="width" secondItem="TgB-QA-BKB" secondAttribute="width" id="Blb-zr-dfb"/>
+                                                <constraint firstItem="TgB-QA-BKB" firstAttribute="leading" secondItem="S8D-ZU-7mj" secondAttribute="leading" id="CrR-Rh-sXo"/>
+                                                <constraint firstItem="9HV-nS-dT0" firstAttribute="top" secondItem="VNm-5V-WKo" secondAttribute="bottom" multiplier="0.6" constant="5.5" id="Etc-SS-lOt"/>
+                                                <constraint firstItem="9HV-nS-dT0" firstAttribute="leading" secondItem="TgB-QA-BKB" secondAttribute="leading" id="Gx8-2I-wM0"/>
+                                                <constraint firstItem="9HV-nS-dT0" firstAttribute="top" secondItem="TgB-QA-BKB" secondAttribute="bottom" constant="55.5" id="Kxq-K2-b1y"/>
+                                                <constraint firstItem="TgB-QA-BKB" firstAttribute="trailing" secondItem="S8D-ZU-7mj" secondAttribute="trailing" id="Nle-R8-hEX"/>
+                                                <constraint firstItem="S8D-ZU-7mj" firstAttribute="height" secondItem="oZZ-wb-tRd" secondAttribute="height" multiplier="0.1" id="ZSK-qq-seC"/>
+                                                <constraint firstItem="S8D-ZU-7mj" firstAttribute="centerX" secondItem="oZZ-wb-tRd" secondAttribute="centerX" id="aZo-Bc-tus"/>
+                                                <constraint firstItem="S8D-ZU-7mj" firstAttribute="width" secondItem="oZZ-wb-tRd" secondAttribute="width" multiplier="0.7" id="bmG-0D-8kp"/>
+                                                <constraint firstItem="VNm-5V-WKo" firstAttribute="width" secondItem="9HV-nS-dT0" secondAttribute="width" id="ggf-Hq-QP3"/>
+                                                <constraint firstItem="TgB-QA-BKB" firstAttribute="height" secondItem="S8D-ZU-7mj" secondAttribute="height" id="hu1-6v-P3b"/>
+                                                <constraint firstItem="TgB-QA-BKB" firstAttribute="top" secondItem="S8D-ZU-7mj" secondAttribute="bottom" multiplier="1.3" constant="16" id="uzg-Ih-sNZ"/>
+                                                <constraint firstItem="9HV-nS-dT0" firstAttribute="height" secondItem="TgB-QA-BKB" secondAttribute="height" id="vAZ-2G-Ox4"/>
+                                                <constraint firstItem="VNm-5V-WKo" firstAttribute="centerX" secondItem="oZZ-wb-tRd" secondAttribute="centerX" id="yOD-aB-5iY"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="1Rm-jk-ro8" firstAttribute="centerY" secondItem="B3T-YS-tsi" secondAttribute="centerY" id="25I-hl-pXn"/>
+                                        <constraint firstItem="oZZ-wb-tRd" firstAttribute="centerY" secondItem="B3T-YS-tsi" secondAttribute="centerY" id="C8j-Fu-iP8"/>
+                                        <constraint firstItem="4Nv-j6-amP" firstAttribute="height" secondItem="B3T-YS-tsi" secondAttribute="height" multiplier="0.2" id="Sn0-YC-xXm"/>
+                                        <constraint firstItem="1Rm-jk-ro8" firstAttribute="width" secondItem="B3T-YS-tsi" secondAttribute="width" id="URw-Lx-Ph8"/>
+                                        <constraint firstItem="oZZ-wb-tRd" firstAttribute="width" secondItem="B3T-YS-tsi" secondAttribute="width" multiplier="0.7" id="bh5-nJ-JnF"/>
+                                        <constraint firstItem="1Rm-jk-ro8" firstAttribute="height" secondItem="B3T-YS-tsi" secondAttribute="height" id="big-Ha-En9"/>
+                                        <constraint firstItem="4Nv-j6-amP" firstAttribute="centerY" secondItem="B3T-YS-tsi" secondAttribute="centerY" multiplier="0.5" id="guu-DU-XOO"/>
+                                        <constraint firstItem="1Rm-jk-ro8" firstAttribute="centerX" secondItem="B3T-YS-tsi" secondAttribute="centerX" id="iCn-oH-RoV"/>
+                                        <constraint firstItem="oZZ-wb-tRd" firstAttribute="centerX" secondItem="B3T-YS-tsi" secondAttribute="centerX" id="k51-4L-Q9O"/>
+                                        <constraint firstItem="4Nv-j6-amP" firstAttribute="centerX" secondItem="B3T-YS-tsi" secondAttribute="centerX" id="o8b-nV-O4O"/>
+                                        <constraint firstItem="oZZ-wb-tRd" firstAttribute="height" secondItem="B3T-YS-tsi" secondAttribute="height" multiplier="0.5" id="sjQ-FU-7ID"/>
+                                        <constraint firstItem="4Nv-j6-amP" firstAttribute="width" secondItem="B3T-YS-tsi" secondAttribute="width" multiplier="0.3" id="vye-DH-RMe"/>
+                                    </constraints>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="JvH-n8-H0X" firstAttribute="width" secondItem="aeE-Bg-al2" secondAttribute="width" id="L1a-yv-Gmo"/>
+                            <constraint firstItem="JvH-n8-H0X" firstAttribute="centerX" secondItem="1WM-Eb-1Wo" secondAttribute="centerX" id="V8s-ci-gPT"/>
+                            <constraint firstItem="JvH-n8-H0X" firstAttribute="height" secondItem="aeE-Bg-al2" secondAttribute="height" id="ZUU-jf-dd7"/>
+                            <constraint firstItem="JvH-n8-H0X" firstAttribute="centerY" secondItem="1WM-Eb-1Wo" secondAttribute="centerY" id="ibc-Pw-vyO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1WM-Eb-1Wo"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="P12-w9-qop"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Yb-O1-dsz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212.890625" y="102.7818448023426"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="23i-gM-QTI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6pn-GE-CGb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OVJ-iO-e3m">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Bqb-wU-azu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfH-RN-8qE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-907" y="126"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cinema_4" width="1024" height="683"/>
+    </resources>
 </document>

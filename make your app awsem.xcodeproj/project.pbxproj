@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F4E8F7422FA409500FA918B /* OpeningScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4E8F7322FA409500FA918B /* OpeningScreen.swift */; };
+		1F4FFEF622F90B8E009FD826 /* DisighnableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FFEF522F90B8E009FD826 /* DisighnableButton.swift */; };
+		1F4FFEF822FA1406009FD826 /* DisighnableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FFEF722FA1406009FD826 /* DisighnableView.swift */; };
+		1F4FFEFB22FA15D6009FD826 /* SighnInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4FFEFA22FA15D6009FD826 /* SighnInViewController.swift */; };
+		1F51E77722FEFE1600E3D897 /* DisighnableTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F51E77622FEFE1600E3D897 /* DisighnableTF.swift */; };
 		1F59859222F8BD0700D67337 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F59859122F8BD0700D67337 /* AppDelegate.swift */; };
-		1F59859422F8BD0700D67337 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F59859322F8BD0700D67337 /* ViewController.swift */; };
 		1F59859722F8BD0700D67337 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F59859522F8BD0700D67337 /* Main.storyboard */; };
 		1F59859922F8BD0700D67337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F59859822F8BD0700D67337 /* Assets.xcassets */; };
 		1F59859C22F8BD0700D67337 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F59859A22F8BD0700D67337 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F4E8F7322FA409500FA918B /* OpeningScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpeningScreen.swift; sourceTree = "<group>"; };
+		1F4FFEF522F90B8E009FD826 /* DisighnableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisighnableButton.swift; sourceTree = "<group>"; };
+		1F4FFEF722FA1406009FD826 /* DisighnableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisighnableView.swift; sourceTree = "<group>"; };
+		1F4FFEFA22FA15D6009FD826 /* SighnInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SighnInViewController.swift; sourceTree = "<group>"; };
+		1F51E77622FEFE1600E3D897 /* DisighnableTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisighnableTF.swift; sourceTree = "<group>"; };
 		1F59858E22F8BD0600D67337 /* make your app awsem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "make your app awsem.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F59859122F8BD0700D67337 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1F59859322F8BD0700D67337 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1F59859622F8BD0700D67337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F59859822F8BD0700D67337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F59859B22F8BD0700D67337 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F59859D22F8BD0700D67337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F5985A422F8C53100D67337 /* LobsterTwo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LobsterTwo-BoldItalic.ttf"; path = "../../../../Downloads/fonts/Lobster_Two/LobsterTwo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		1F5985A522F8C55700D67337 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-MediumItalic.ttf"; path = "../../../../Downloads/fonts/Roboto/Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F4FFEF422F90B04009FD826 /* IBDesighnable */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FFEF522F90B8E009FD826 /* DisighnableButton.swift */,
+				1F4FFEF722FA1406009FD826 /* DisighnableView.swift */,
+				1F51E77622FEFE1600E3D897 /* DisighnableTF.swift */,
+			);
+			path = IBDesighnable;
+			sourceTree = "<group>";
+		};
+		1F4FFEF922FA151D009FD826 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				1F4E8F7322FA409500FA918B /* OpeningScreen.swift */,
+				1F4FFEFA22FA15D6009FD826 /* SighnInViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		1F59858522F8BD0600D67337 = {
 			isa = PBXGroup;
 			children = (
@@ -55,13 +84,24 @@
 			isa = PBXGroup;
 			children = (
 				1F59859122F8BD0700D67337 /* AppDelegate.swift */,
-				1F59859322F8BD0700D67337 /* ViewController.swift */,
 				1F59859522F8BD0700D67337 /* Main.storyboard */,
+				1F4FFEF922FA151D009FD826 /* views */,
+				1F5985A322F8C4C200D67337 /* fonts */,
+				1F4FFEF422F90B04009FD826 /* IBDesighnable */,
 				1F59859822F8BD0700D67337 /* Assets.xcassets */,
 				1F59859A22F8BD0700D67337 /* LaunchScreen.storyboard */,
 				1F59859D22F8BD0700D67337 /* Info.plist */,
 			);
 			path = "make your app awsem";
+			sourceTree = "<group>";
+		};
+		1F5985A322F8C4C200D67337 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1F5985A422F8C53100D67337 /* LobsterTwo-BoldItalic.ttf */,
+				1F5985A522F8C55700D67337 /* Roboto-MediumItalic.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +176,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F59859422F8BD0700D67337 /* ViewController.swift in Sources */,
+				1F4FFEF822FA1406009FD826 /* DisighnableView.swift in Sources */,
 				1F59859222F8BD0700D67337 /* AppDelegate.swift in Sources */,
+				1F51E77722FEFE1600E3D897 /* DisighnableTF.swift in Sources */,
+				1F4FFEF622F90B8E009FD826 /* DisighnableButton.swift in Sources */,
+				1F4E8F7422FA409500FA918B /* OpeningScreen.swift in Sources */,
+				1F4FFEFB22FA15D6009FD826 /* SighnInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

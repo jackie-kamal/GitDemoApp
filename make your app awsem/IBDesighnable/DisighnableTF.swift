@@ -8,6 +8,10 @@
 
 import UIKit
 
-class DisighnableTF: CATextLayer {
-
+@IBDesignable class DisighnableTF: UITextField {
+    @IBInspectable var cornerRadius: CGFloat = 0.0 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+        }
+    }
 }
